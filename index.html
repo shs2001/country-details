@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Details API</title>
+    <link rel="icon" href="image/flag.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.2-web/css/all.min.css">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="card shadow mt-5 p-3 ">
+                    <img class="card-img-top heading-img" src="image/flag.png" alt="Flag">
+                    <h2 class="heading"><span>Country</span> Details</h2>
+                    <div class="card-body border">
+                        <form id="searchForm">
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <select class="form-control" id="searchby">
+                                        <option value="name" >Country Name</option>
+                                        <option value="alpha">Country Code</option>
+                                        <option value="currency">Currency</option>
+                                        <option value="lang">Language </option>
+                                        <option value="capital">Capital city </option>
+                                        <option value="region">Region </option>
+                                        <option value="subregion">Subregion </option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 p-0 mb-3">
+                                    <input type="text" id="query" class="form-control"
+                                        placeholder="Search country name">
+                                    <small id="queryhelp" class="text-danger"></small>
+                                </div>
+                                <div class="col-md-2 mb-3">
+                                    <button class="btn btn-info" id="searchbtn"><span
+                                            class="fa fa-search"></span></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="result p-2">
+                        <table class="table table-bordered">
+                            <tbody>
+                                <tr>
+                                    <td>Flag</td>
+                                    <td>
+                                        <img class="c_img" src="" alt="">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Name:</td>
+                                    <td><p class="c_name"></p></td>
+                                </tr>
+                                <tr>
+                                    <td>Capital:</td>
+                                    <td><p class="c_capital"></p></td>
+                                </tr>
+                                <tr>
+                                    <td>Region:</td>
+                                    <td><p class="c_region"></p></td>
+                                </tr>
+                                <tr>
+                                    <td>Population:</td>
+                                    <td><p class="c_population"></p></td>
+                                </tr>
+                                <tr>
+                                    <td>Area:</td>
+                                    <td><p class="c_area"></p></td>
+                                </tr>
+                                <tr>
+                                    <td>Top Level Domain:</td>
+                                    <td><p class="c_tld"></p></td>
+                                </tr>
+                                <tr>
+                                    <td>Subregion:</td>
+                                    <td><p class="c_subregion"></p></td>
+                                </tr>
+                                <tr>
+                                    <td>Maps:</td>
+                                    <td><a href="#" target="_blank" class="c_maps"><strong class="map_link"><i class="fa fa-map"></i> Google Map</strong></a></td>
+                                </tr>
+                                <tr>
+                                    <td>Timezone:</td>
+                                    <td><p class="c_timezones"></p></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td colspan="2"><button id="again" class="btn btn-primary btn-sm"><span class="fa fa-undo"></span> Again Search</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
