@@ -1,6 +1,4 @@
 $(document).ready(function () {
-    var searchby = $("#searchby").val();
-    var query = $("#query").val();
     $(".result").hide();
 
     $("#searchby").on('change', function () {
