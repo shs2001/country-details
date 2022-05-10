@@ -1,6 +1,8 @@
 $(document).ready(function () {
+    setTimeout(() => {
+        $(".preloader").hide();
+    }, 1000);
     $(".result").hide();
-
     $("#searchby").on('change', function () {
         var searchby = $("#searchby").val();
         switch (searchby) {
